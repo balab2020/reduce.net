@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reduce", "Reduce\Reduce.csproj", "{D5A2D5A6-0509-4F54-BB27-B24E792021D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1736AA9F-3477-4584-91E9-7E318830127D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{92B3046F-AD90-4385-A1FE-370C88EF553E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReduceTests", "ReduceTests\ReduceTests.csproj", "{DD28CB29-5224-473B-BBC3-C2BC0ACFCC81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5A2D5A6-0509-4F54-BB27-B24E792021D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A2D5A6-0509-4F54-BB27-B24E792021D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A2D5A6-0509-4F54-BB27-B24E792021D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A2D5A6-0509-4F54-BB27-B24E792021D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD28CB29-5224-473B-BBC3-C2BC0ACFCC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD28CB29-5224-473B-BBC3-C2BC0ACFCC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD28CB29-5224-473B-BBC3-C2BC0ACFCC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD28CB29-5224-473B-BBC3-C2BC0ACFCC81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5A2D5A6-0509-4F54-BB27-B24E792021D2} = {1736AA9F-3477-4584-91E9-7E318830127D}
+		{DD28CB29-5224-473B-BBC3-C2BC0ACFCC81} = {92B3046F-AD90-4385-A1FE-370C88EF553E}
+	EndGlobalSection
+EndGlobal
