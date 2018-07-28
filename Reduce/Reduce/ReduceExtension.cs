@@ -13,5 +13,14 @@
             return accumulator;
         }
 
+        public static P ReduceTo<T, P>(this IList<T> source, Func<P, T, P> reducer, P seed)
+        {
+            var accumulator = seed == null ? Activator.CreateInstance<P>() : seed;
+            (source as List<T>).ForEach(currentValue => {
+                accumulator = reducer(accumulator, currentValue);
+            });
+            return accumulator;
+        }
+
     }
 }

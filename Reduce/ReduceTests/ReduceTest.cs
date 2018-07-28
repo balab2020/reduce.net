@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using Reduce;
     using System.Linq;
+    using System;
 
     [TestClass]
     public class ReduceTest
@@ -47,5 +48,33 @@
             //assert
             Assert.AreEqual("Bala", senior.Name);
         }
+
+        [TestMethod]
+        public void ReduceAs_CalledWithEmployees_MinorEmployeeaReturned()
+        {
+            //arrange
+            var employees = new List<Employee> {
+                new Employee {Age=60, Name="Bala" },
+                new Employee {Age=17, Name="Murugan" },
+                new Employee {Age=15, Name="Murugan" }
+            };
+
+            //act
+            var minors = employees.ReduceTo(ReducerMinorEmployee, new List<Employee>());
+            //assert
+            Assert.AreEqual(2,minors.Count());
+        }
+
+        static List<Employee> ReducerMinorEmployee(List<Employee> minors, Employee cur)
+        {
+            if (IsEmployeeMinor(cur))
+                minors.Add(cur);
+            return minors;
+        }
+
+        static bool IsEmployeeMinor(Employee emp) {
+            return emp.Age < 18;
+        }
+
     }
 }
