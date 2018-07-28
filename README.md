@@ -1,5 +1,5 @@
 # reduce.net
-reduce api in .net collection. It is equivant aPI reduce in javascript.
+reduce api in .net collection. It is equivant API reduce in javascript.
 
 Sample:
 
